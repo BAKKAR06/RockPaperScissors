@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Камень Ножницы Бумага dApp</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Камень • Ножницы • Бумага</h1>
+      <p class="subtitle">Децентрализованная игра на смарт-контракте</p>
+
+      <div class="top-panel">
+        <button id="connectWallet">Подключить MetaMask</button>
+      </div>
+
+      <div class="info-grid">
+        <div class="info-box">
+          <span class="label">Статус</span>
+          <span id="status">Ожидание подключения...</span>
+        </div>
+        <div class="info-box">
+          <span class="label">Кошелёк</span>
+          <span id="walletAddress">Не подключен</span>
+        </div>
+        <div class="info-box">
+          <span class="label">Цена игры</span>
+          <span id="gamePrice">—</span>
+        </div>
+        <div class="info-box">
+          <span class="label">Баланс контракта</span>
+          <span id="contractBalance">—</span>
+        </div>
+      </div>
+
+      <div class="game-area">
+        <h2>Выберите вариант</h2>
+
+        <div class="choice-grid">
+          <button class="choice-btn" id="btnRock">🪨 Камень</button>
+          <button class="choice-btn" id="btnScissors">✂️ Ножницы</button>
+          <button class="choice-btn" id="btnPaper">📄 Бумага</button>
+        </div>
+
+        <div class="actions">
+          <button id="refreshInfo">Обновить данные</button>
+          <button id="getResult">Получить результат</button>
+        </div>
+
+        <div class="result-box">
+          <h3>Результат игры</h3>
+          <p id="result">Здесь появится результат</p>
+        </div>
+      </div>
+
+      <div class="footer-note">
+        <p>
+          Выбор игрока: 0 — Камень, 1 — Ножницы, 2 — Бумага
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
